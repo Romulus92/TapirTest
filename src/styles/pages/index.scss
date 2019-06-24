@@ -4,6 +4,8 @@ body {
   background: #101114;
 }
 
+//Использую функции vw и vh, их код в layout/_media.scss
+
 .subheading {
   color: #1F2229;
   font-size: vw(13);
@@ -16,6 +18,8 @@ body {
   width: vw(710);
   margin: 0 auto;
 }
+
+//левое меню и лого
 
 .aside {
   width: 45.4%;
@@ -54,6 +58,8 @@ body {
     }
   }
 }
+
+//Касса/Корзина
 
 .checkout {
   width: 54.6%;
@@ -101,6 +107,8 @@ body {
     }
   }
 }
+
+//Форма
 
 .form {
   &__group {

@@ -1,4 +1,6 @@
+//Структуру подсмотрел у коллеги на одной из прошлых работ отдельный объект с функциями и внизу их вызов
 const func = {
+  //Переключение пунктов меню
   activeMenu() {
     const items = document.querySelectorAll('.aside__item')
     items.forEach((item) => {
@@ -12,6 +14,7 @@ const func = {
       })
     })
   },
+  //Валидации для карточки, имени и cvv соответственно
   validationCard() {
     const cards = document.querySelectorAll('.form__input_card')
     cards.forEach((card) => {
@@ -44,6 +47,7 @@ const func = {
       }
     })
   },
+  //обработка клика с формы
   formSubmit() {
     const form = document.querySelector('.form')
     form.addEventListener('submit', (e) => {
@@ -54,6 +58,9 @@ const func = {
   } 
 }
 
+
+//Можно отключать вызов функции не удаляя её, если нужно
+//Отдельно можно вешать функции на load, resize и scroll. Очень удобно.
 const app = {
   'init': () => {
     func.activeMenu()
@@ -70,6 +77,8 @@ const app = {
   },
 };
 
+
+//Первоначальный вызов функций и обработчики событий
 app.init();
 window.addEventListener("load", () => {
   app.load();
