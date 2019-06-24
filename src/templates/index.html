@@ -11,7 +11,97 @@
 </head>
 
 <body>
-	<!--header-->
+	<div class="container">
+		<div class="wrapper">
+			<div class="aside">
+				<div class="aside__logo">
+					<img src="assets/images/logo.svg" class="aside__logo-img">
+				</div>
+				<ul class="aside__menu">
+					<li class="aside__item">Первая ссылка</li>
+					<li class="aside__item aside__item_active">Вторая ссылка (Active)</li>
+					<li class="aside__item">Третья ссылка (Hover)</li>
+					<li class="aside__item">Четвёртая ссылка</li>
+				</ul>
+			</div>
+			<div class="checkout">
+				<h2 class="checkout__heading">Заголовок страницы</h2>
+				<span class="checkout__lead">Давно выяснено, что при оценке дизайна и<br> композиции читаемый текст мешает</span>
+				<div class="checkout__info">
+					<h3 class="subheading checkout__info-heading">ИНФОРМАЦИЯ  ПО ОПЛАТЕ</h3>
+					<ul class="checkout__info-list">
+						<li class="checkout__info-item">
+							<span class="checkout__info-text">Номер счёта:</span>
+							<span class="checkout__info-number">894994949993939</span>
+						</li>
+						<li class="checkout__info-item">
+							<span class="checkout__info-text">Сумма платежа:</span>
+							<span class="checkout__info-number">1 000 руб.</span>
+						</li>
+					</ul>
+					<form class="form">
+						<div class="form__row">
+							<div class="form__group">
+								<h3 class="subheading form__heading">НОМЕР КАРТЫ</h3>
+								<div class="form__inputs">
+									<input type="number" class="form__input form__input_card">
+									<input type="number" class="form__input form__input_card">
+									<input type="number" class="form__input form__input_card">
+									<input type="number" class="form__input form__input_card">
+								</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__group form__group_name">
+								<h3 class="subheading form__heading">ДЕРЖАТЕЛЬ КАРТЫ</h3>
+								<input type="text" class="form__input form__input_name">
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__group form__group_selects">
+								<h3 class="subheading form__heading">СРОК ДЕЙСТВИЯ</h3>
+								<div class="form__selects">
+									<select name="month" class="form__select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select>
+									<select name="year" class="form__select">
+										<option value="2019">2019</option>
+										<option value="2020">2020</option>
+										<option value="2021">2021</option>
+										<option value="2022">2022</option>
+										<option value="2023">2023</option>
+										<option value="2024">2024</option>
+										<option value="2025">2025</option>
+										<option value="2026">2026</option>
+										<option value="2027">2027</option>
+										<option value="2028">2028</option>
+									</select>
+								</div>
+							</div>
+							<div class="form__group form__group_cvv">
+								<h3 class="subheading form__heading">CVV</h3>
+								<input type="text" class="form__input form__input_cvv">
+							</div>
+						</div>
+						<div class="form__row">
+							<button type="submit" class="form__submit">ОПЛАТИТЬ</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="assets/scripts/app.js" defer></script>
 </body>
 

@@ -26,6 +26,19 @@ body {
   box-sizing: border-box;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+select {
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  appearance: none;       /* remove default arrow */
+  background: url(../images/down_arrow.svg) 85% center no-repeat;  /* add custom arrow */
+}
+
 /* body,
 html {
   height: 100%;
@@ -39,6 +52,11 @@ a {
   cursor: pointer;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
 }
@@ -46,11 +64,6 @@ li {
 /* img:not([src]) {
   visibility: hidden;
 } */
-
-.slick-slide,
-.slick-slide * {
-  outline: none !important;
-}
 
 .wrapper {
   width: 100%;
@@ -76,131 +89,6 @@ li {
   }
   @include phones {
     max-width: 100%;
-  }
-  &-history-slider {
-    max-width: rem(1170px);
-  }
-  /* @include bignotebooks {
-    max-width: rem(980px);
-  } */
-  &-know {
-    overflow: visible;
-    height: 100%;
-    /* @include tablets {
-      overflow: hidden;
-    } */
-    @include phones {
-      width: 100%;
-    }
-  }
-  &-advantages {
-    display: flex;
-    flex-direction: row;
-    overflow: visible;
-    @include tablets {
-      flex-direction: column;
-    }
-  }
-  &-steps {
-    overflow: visible;
-    max-width: rem(1170px);
-    transition: all 1s ease-in-out;
-    flex-direction: row;
-    @include tablets {
-      width: 100%;
-      flex-direction: column;
-    }
-    &-item {
-      flex-direction: row;
-      overflow: visible;
-      @include tablets {
-        flex-direction: column;
-      }
-    }
-    /* @include phones {
-      width: 480px;
-    } */
-  }
-  &-expert {
-    overflow: visible;
-    @include tablets {
-      overflow: hidden;
-    }
-    @include phones {
-      width: 100%;
-    }
-  }
-  &-license {
-    overflow: visible;
-    @include tablets {
-      overflow: hidden;
-    }
-    @include phones {
-      width: 100%;
-    }
-  }
-  &-reviews {
-    overflow: visible;
-    @include tablets {
-      overflow: hidden;
-    }
-  }
-  &-header {
-    overflow: visible;
-    @include tablets {
-      overflow: hidden;
-    }
-  }
-  &-hero {
-    overflow: visible;
-    @include tablets {
-      overflow: hidden;
-    }
-  }
-  &-quote {
-    overflow: visible;
-    max-width: rem(1198px);
-    @include tablets {
-      overflow: hidden;
-    }
-  }
-  &-ask {
-    overflow: visible;
-    @include tablets {
-      overflow: hidden;
-    }
-  }
-  &-slider {
-    /* padding-top: 100px; */
-    &-progress {
-      padding-top: 0;
-      height: 145px;
-      margin-top: -530px;
-      @include tablets {
-        height: 80px;
-      }
-      @include phones {
-        margin-top: -100px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-      }
-    }
-    @include bignotebooks {
-      max-width: rem(1014px);
-    }
-  }
-  &-burger {
-    height: 700px;
-    @include phones {
-      height: 400px;
-    }
-  }
-  &-contacts {
-    @include tablets {
-      max-width: 100%;
-      width: 100%;
-    }
   }
 }
 
