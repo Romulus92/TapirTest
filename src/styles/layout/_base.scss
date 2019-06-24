@@ -1,0 +1,211 @@
+html {
+  font-size: 16px;
+  @include tablets {
+    font-size: 15px;
+  }
+  @include phones {
+    font-size: 13px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: rem(16px);
+  /* font-family: 'Circe', Arial, Helvetica, sans-serif; */
+  line-height: 1.42;
+  /* color: $dark; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* body,
+html {
+  height: 100%;
+} */
+
+.body-hidden {
+  overflow: hidden;
+}
+
+a {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+/* img:not([src]) {
+  visibility: hidden;
+} */
+
+.slick-slide,
+.slick-slide * {
+  outline: none !important;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.maincontent {
+  height: 100%;
+  min-height: rem(650px);
+}
+
+.container {
+  position: relative;
+  width: 95%;
+  max-width: rem(1170px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  @include tablets {
+    max-width: 678px;
+  }
+  @include phones {
+    max-width: 100%;
+  }
+  &-history-slider {
+    max-width: rem(1170px);
+  }
+  /* @include bignotebooks {
+    max-width: rem(980px);
+  } */
+  &-know {
+    overflow: visible;
+    height: 100%;
+    /* @include tablets {
+      overflow: hidden;
+    } */
+    @include phones {
+      width: 100%;
+    }
+  }
+  &-advantages {
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    @include tablets {
+      flex-direction: column;
+    }
+  }
+  &-steps {
+    overflow: visible;
+    max-width: rem(1170px);
+    transition: all 1s ease-in-out;
+    flex-direction: row;
+    @include tablets {
+      width: 100%;
+      flex-direction: column;
+    }
+    &-item {
+      flex-direction: row;
+      overflow: visible;
+      @include tablets {
+        flex-direction: column;
+      }
+    }
+    /* @include phones {
+      width: 480px;
+    } */
+  }
+  &-expert {
+    overflow: visible;
+    @include tablets {
+      overflow: hidden;
+    }
+    @include phones {
+      width: 100%;
+    }
+  }
+  &-license {
+    overflow: visible;
+    @include tablets {
+      overflow: hidden;
+    }
+    @include phones {
+      width: 100%;
+    }
+  }
+  &-reviews {
+    overflow: visible;
+    @include tablets {
+      overflow: hidden;
+    }
+  }
+  &-header {
+    overflow: visible;
+    @include tablets {
+      overflow: hidden;
+    }
+  }
+  &-hero {
+    overflow: visible;
+    @include tablets {
+      overflow: hidden;
+    }
+  }
+  &-quote {
+    overflow: visible;
+    max-width: rem(1198px);
+    @include tablets {
+      overflow: hidden;
+    }
+  }
+  &-ask {
+    overflow: visible;
+    @include tablets {
+      overflow: hidden;
+    }
+  }
+  &-slider {
+    /* padding-top: 100px; */
+    &-progress {
+      padding-top: 0;
+      height: 145px;
+      margin-top: -530px;
+      @include tablets {
+        height: 80px;
+      }
+      @include phones {
+        margin-top: -100px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+      }
+    }
+    @include bignotebooks {
+      max-width: rem(1014px);
+    }
+  }
+  &-burger {
+    height: 700px;
+    @include phones {
+      height: 400px;
+    }
+  }
+  &-contacts {
+    @include tablets {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.section {
+  background-color: rgba(0, 0, 0, 0.31);
+  width: 100%;
+  height: 100%;
+}
