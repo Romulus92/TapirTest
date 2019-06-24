@@ -44,17 +44,17 @@
 							<div class="form__group">
 								<h3 class="subheading form__heading">НОМЕР КАРТЫ</h3>
 								<div class="form__inputs">
-									<input type="number" class="form__input form__input_card">
-									<input type="number" class="form__input form__input_card">
-									<input type="number" class="form__input form__input_card">
-									<input type="number" class="form__input form__input_card">
+									<input class="form__input form__input_card" type="text" minlength="4" maxlength="4"  placeholder="1111" pattern='\d{4}' required>
+									<input type="text"  class="form__input form__input_card" pattern='\d{4}' minlength="4" maxlength="4" placeholder="1111" required>
+									<input type="text" pattern='\d{4}' class="form__input form__input_card" minlength="4" maxlength="4" placeholder="1111" required>
+									<input type="text" pattern='\d{4}' minlength="4" maxlength="4"  class="form__input form__input_card" placeholder="1111" required>
 								</div>
 							</div>
 						</div>
 						<div class="form__row">
 							<div class="form__group form__group_name">
 								<h3 class="subheading form__heading">ДЕРЖАТЕЛЬ КАРТЫ</h3>
-								<input type="text" class="form__input form__input_name">
+								<input type="text" minlength="4" placeholder="John Doe" pattern='([A-Za-z\. -]+)' class="form__input form__input_name" required>
 							</div>
 						</div>
 						<div class="form__row">
@@ -91,7 +91,7 @@
 							</div>
 							<div class="form__group form__group_cvv">
 								<h3 class="subheading form__heading">CVV</h3>
-								<input type="text" class="form__input form__input_cvv">
+								<input type="text" class="form__input form__input_cvv" placeholder="111" pattern='\d{3}' maxlength="3" minlength="3" required>
 							</div>
 						</div>
 						<div class="form__row">

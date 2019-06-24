@@ -137,11 +137,17 @@ body {
     @include opensans(bold);
     font-size: vw(13);
     line-height: vh(18);
-    color: #959595;
+    color: #1F2229;
     letter-spacing: 0.5px;
+    &_error {
+      border: 1px solid red;
+    }
     &:focus {
       border: none;
       outline: none;
+    }
+    &::placeholder {
+      color: #959595;
     }
     &_card {
       width: 22.8%;
@@ -168,7 +174,7 @@ body {
     @include opensans(bold);
     font-size: vw(13);
     line-height: vh(18);
-    color: #959595;
+    color: #1F2229;
     letter-spacing: 0.5px;
     padding-left: vw(13);
     position: relative;
@@ -182,6 +188,9 @@ body {
     }
     &:last-of-type {
       width: 51.5%;
+    }
+    &::placeholder {
+      color: #959595;
     }
     option {
       height: vh(39);
